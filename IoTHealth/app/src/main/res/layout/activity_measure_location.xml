@@ -1,0 +1,13 @@
+<android.support.design.widget.CoordinatorLayout tools:context="com.ygnbinhaus.n3l.iothealth.MeasureLocation"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/measureLocationCoordinatorView"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/userMap"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+</android.support.design.widget.CoordinatorLayout>

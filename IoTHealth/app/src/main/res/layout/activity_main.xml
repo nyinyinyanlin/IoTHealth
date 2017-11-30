@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ygnbinhaus.n3l.iothealth.MainActivity">
+    <Button
+        android:id="@+id/measure"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Measure"/>
+
+    <Button
+        android:id="@+id/history"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="HISTORY" />
+
+    <Button
+        android:id="@+id/doctor"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="DOCTOR"/>
+
+    <Button
+        android:id="@+id/emergency"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="EMERGENCY"/>
+
+    <Button
+        android:id="@+id/setting"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="SETTING" />
+
+</android.support.v7.widget.LinearLayoutCompat>

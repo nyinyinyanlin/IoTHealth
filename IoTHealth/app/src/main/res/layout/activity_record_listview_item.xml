@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:padding="10dp">
+        <TextView
+            android:text="Date: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:id="@+id/dateTextView"/>
+        <TextView
+            android:id="@+id/tvDate"
+            android:text="30"
+            android:textColor="#000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/dateTextView"/>
+        <TextView
+            android:text="Heart: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dateTextView"
+            android:id="@+id/heartrateTextView"/>
+        <TextView
+            android:id="@+id/tvHeartrate"
+            android:text="30"
+            android:textColor="#000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dateTextView"
+            android:layout_toRightOf="@id/heartrateTextView"/>
+        <TextView
+            android:text="Oxyg: "
+            android:paddingLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dateTextView"
+            android:layout_toRightOf="@id/tvHeartrate"
+            android:id="@+id/oxygenTextView"/>
+        <TextView
+            android:id="@+id/tvOxygen"
+            android:text="30"
+            android:textColor="#000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dateTextView"
+            android:layout_toRightOf="@id/oxygenTextView"/>
+        <TextView
+            android:text="Temp: "
+            android:paddingLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dateTextView"
+            android:layout_toRightOf="@id/tvOxygen"
+            android:id="@+id/temperatureTextView"/>
+        <TextView
+            android:id="@+id/tvTemperature"
+            android:text="30"
+            android:textColor="#000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dateTextView"
+            android:layout_toRightOf="@id/temperatureTextView"/>
+        <TextView
+            android:id="@+id/tvComment"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/heartrateTextView"
+            android:layout_alignParentStart="true"/>
+</RelativeLayout>

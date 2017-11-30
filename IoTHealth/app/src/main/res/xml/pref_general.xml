@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference
+        android:title="Name"
+        android:key="name"
+        android:summary="Provide Name"/>
+    <EditTextPreference
+        android:title="NRC Number"
+        android:key="nrc"
+        android:summary="Provide NRC Number"/>
+    <EditTextPreference
+        android:title="Email"
+        android:key="email"
+        android:summary="Provide Email Address"/>
+    <EditTextPreference
+        android:title="Key"
+        android:key="key"
+        android:summary="Provide Account Key"/>
+    <EditTextPreference
+        android:title="Doctor Number"
+        android:key="doctor_number"
+        android:summary="Provide Doctor's Number"/>
+    <EditTextPreference
+        android:title="Hospital Number"
+        android:key="hospital_number"
+        android:summary="Provide Hospital's Number"/>
+    <EditTextPreference
+        android:title="Server Address"
+        android:key="server_address"
+        android:summary="Provide Server Address"/>
+</PreferenceScreen>

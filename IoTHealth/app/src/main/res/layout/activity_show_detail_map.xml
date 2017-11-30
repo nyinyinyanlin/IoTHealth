@@ -1,0 +1,127 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.ygnbinhaus.n3l.iothealth.ShowDetailMap">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:background="#FFF"
+        android:id="@+id/bottom_sheet"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+        <TextView
+            android:id="@+id/dateLabel"
+            android:text="Date: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"/>
+        <TextView
+            android:id="@+id/dateBs"
+            android:text="Tuesday"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/dateLabel"/>
+        <TextView
+            android:text="Heart Rate: "
+            android:id="@+id/heartrateLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dateLabel"
+            android:layout_alignParentStart="true"/>
+        <TextView
+            android:id="@+id/heartrateBs"
+            android:text="60BPM"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dateLabel"
+            android:layout_toRightOf="@id/heartrateLabel"/>
+        <TextView
+            android:id="@+id/oxygenLabel"
+            android:text="Oxygen: "
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dateLabel"
+            android:layout_toRightOf="@id/heartrateBs"/>
+        <TextView
+            android:id="@+id/oxygenBs"
+            android:text="95%"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dateLabel"
+            android:layout_toRightOf="@id/oxygenLabel"/>
+        <TextView
+            android:id="@+id/temperatureLabel"
+            android:text="Temperature: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/heartrateLabel"
+            android:layout_alignParentStart="true"/>
+        <TextView
+            android:id="@+id/temperatureBs"
+            android:text="97.5'F"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/heartrateLabel"
+            android:layout_toRightOf="@id/temperatureLabel"/>
+        <TextView
+            android:id="@+id/humidityLabel"
+            android:text="Humidity: "
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/heartrateLabel"
+            android:layout_toRightOf="@id/temperatureBs"/>
+        <TextView
+            android:id="@+id/humidityBs"
+            android:text="50.3%"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/heartrateLabel"
+            android:layout_toRightOf="@id/humidityLabel"/>
+        <TextView
+            android:id="@+id/locationLabel"
+            android:text="Location: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/temperatureLabel"
+            android:layout_alignParentStart="true"/>
+        <TextView
+            android:id="@+id/locationBs"
+            android:text="16.1231232:96.6565675"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/temperatureLabel"
+            android:layout_toRightOf="@id/locationLabel"/>
+        <TextView
+            android:id="@+id/commentBs"
+            android:text='"Additional Comment"'
+            android:textStyle="bold"
+            android:paddingTop="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/locationLabel"
+            android:layout_alignParentStart="true"/>
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>
+
